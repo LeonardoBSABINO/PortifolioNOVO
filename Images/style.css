@@ -1,0 +1,170 @@
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(45deg, #000000, #0D1B70, #162CBA);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
+    font-family:'Courier New', Courier, monospace
+}
+
+ul{
+    display: flex;
+    justify-content:space-between;
+    padding: 25px;
+    list-style-type: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    
+
+}
+.button-cima{
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 500px;
+    
+    }
+    
+.button-cima:hover{
+    background: transparent;
+    color: aquamarine;
+    transform: scale(1.5);rotate:(360deg);
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    cursor:pointer;
+    border: 2px solid aquamarine;
+
+}
+
+
+.foto-perfil{
+width: 270px;
+height: 335px;
+border-radius: 20%;
+border: 5px solid aquamarine;
+box-shadow:0 0 60px rgba(0,255,203,.64);     
+}
+
+.container-foto{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:space-around;
+padding-left: 50px;
+margin: 50px;
+
+
+
+}
+
+.titulo-subtitulo{
+    padding-right: 30px;
+    font-size:20px ;
+    text-decoration: underline;
+}
+
+
+
+.conteudo{
+    padding-top: 30px;
+    padding-left: 35px;
+    text-align: center;
+    font-size: 22px;
+}
+.projetos h2{
+text-align: center;
+text-decoration: underline;
+padding-top: 50px;
+font-size: 35px;
+border-top: 0.4px solid aquamarine;
+}
+.projetos a{
+    color: aquamarine;
+    box-shadow:0 0 15px rgba(0,255,203,.64);
+    font-size: 20px;
+    
+    
+}
+
+
+.contato{    
+border-top: 0.4px solid aquamarine;
+box-shadow:0 0 15px rgba(0,255,203,.64)  
+}
+
+.contato h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.contato p{
+    text-align: center;
+}
+#linkedin{
+    color: aquamarine;
+    box-shadow:0 0 15px rgba(0,255,203,.64);
+}
+#foto-alien{
+    width: 300px;
+}
+.tela-conjunto{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+#foto-bot{
+    width:300px
+}
+.tela-conjunto-bot{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+#foto-vendas{
+    width: 300px;
+}
+.tela-conjunto-vendas{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position:0% 50% ;
+    }
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;   
+    object-fit: cover;
+}
